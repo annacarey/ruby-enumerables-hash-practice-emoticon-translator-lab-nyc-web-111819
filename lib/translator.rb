@@ -18,8 +18,8 @@ def get_japanese_emoticon(file, emoticon)
   emoticon_library = load_library(file)
   pp emoticon_library
   result = ""
-  emoticon_library["get_emoticon"].select do |(english, japanese)|
-    if english == emoticon
+  emoticon_library["get_emoticon"].select do |english, japanese|
+    english == emoticon
       result = japanese
     else 
       result = "Sorry, that emoticon was not found"
