@@ -11,6 +11,7 @@ def load_library(file)
      emoticons["get_meaning"][emoticon[1]] = meaning
      emoticons["get_emoticon"][emoticon[0]] = meaning
    end 
+   pp emoticons
    emoticons
 end
 
