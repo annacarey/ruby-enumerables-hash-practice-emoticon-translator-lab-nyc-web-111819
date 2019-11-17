@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   emoticon_library = load_library(file)
-  pp emoticon_library
+  
   result = ""
   if emoticon_library["get_emoticon"].key?(emoticon) == true
     
@@ -24,17 +24,14 @@ def get_japanese_emoticon(file, emoticon)
   else 
     result = "Sorry, that emoticon was not found"
   end 
-    #emoticon_library["get_emoticon"].select do #|english, japanese|
-   # if english == emoticon
-    #  result = japanese
-   # else 
-   #   result = "Sorry, that emoticon was not found"
-  #  end 
- # end 
-# p result
-#return result
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning (file, emoticon)
+  emoticon_library = load_library(file)
+  result = ""
+  if emoticon_library["get_meaning"][emoticon] == true 
+    result = emoticon_library["get_meaning"][emoticon]
+  else 
+    result = "Sorry, that emoticon was not found"
+  end 
 end
