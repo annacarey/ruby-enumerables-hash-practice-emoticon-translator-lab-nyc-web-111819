@@ -21,7 +21,7 @@ def get_japanese_emoticon(file, emoticon)
     if english == emoticon
       p "loop"
       pp english
-      pp japanese
+      return japanese
   end 
 end 
 end
