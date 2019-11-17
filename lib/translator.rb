@@ -20,13 +20,12 @@ def get_japanese_emoticon(file, emoticon)
   result = ""
   emoticon_library["get_emoticon"].each do |english, japanese|
     if english == emoticon
-      p "loop"
-      pp english
-      result= japanese
+      result = japanese
     else 
       result = "Sorry, that emoticon was not found"
+    end 
   end 
-end 
+  p result
 return result
 end
 
