@@ -30,7 +30,7 @@ def get_english_meaning (file, emoticon)
   emoticon_library = load_library(file)
   result = ""
   binding.pry
-  if emoticon_library["get_meaning"][emoticon] == true 
+  if emoticon_library["get_meaning"].key?(emoticon) == true 
     result = emoticon_library["get_meaning"][emoticon]
   else 
     result = "Sorry, that emoticon was not found"
