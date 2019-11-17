@@ -19,7 +19,7 @@ def get_japanese_emoticon(file, emoticon)
   pp emoticon_library
   result = ""
   emoticon_library["get_emoticon"].select do |english, japanese|
-    
+    english == emoticon
     #emoticon_library["get_emoticon"].select do #|english, japanese|
    # if english == emoticon
     #  result = japanese
