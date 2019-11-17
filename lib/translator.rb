@@ -23,7 +23,8 @@ def get_japanese_emoticon(file, emoticon)
       p "loop"
       pp english
       result= japanese
-    else result = "Sorry, that emoticon was not found"
+    else 
+      result = "Sorry, that emoticon was not found"
   end 
 end 
 return result
