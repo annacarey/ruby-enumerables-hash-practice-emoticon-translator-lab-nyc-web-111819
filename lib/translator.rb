@@ -19,7 +19,8 @@ def get_japanese_emoticon(file, emoticon)
   pp emoticon_library
   emoticon_library["get_emoticon"].each do |english, japanese|
     if english == emoticon
-      emoticon_library[]
+      pp japanese
+      emoticon_library[english]
   end 
 end 
 end
