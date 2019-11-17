@@ -19,14 +19,16 @@ def get_japanese_emoticon(file, emoticon)
   pp emoticon_library
   result = ""
   emoticon_library["get_emoticon"].select do |english, japanese|
-    english == emoticon
-      result = japanese
-    else 
-      result = "Sorry, that emoticon was not found"
-    end 
-  end 
-  p result
-return result
+    
+    #emoticon_library["get_emoticon"].select do #|english, japanese|
+   # if english == emoticon
+    #  result = japanese
+   # else 
+   #   result = "Sorry, that emoticon was not found"
+  #  end 
+ # end 
+# p result
+#return result
 end
 
 def get_english_meaning
